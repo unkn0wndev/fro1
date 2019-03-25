@@ -1,0 +1,30 @@
+body{
+  background-color: darkgray;
+  font-family: "Lobster", serif;
+}
+.wrapper{
+  font-family: "Lobster", serif;
+  width: 250px;
+  background-color: orange;
+  border: 15px;
+  border-style: groove groove groove groove;
+  border-color: orange;
+  border-radius: 40px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+#myAssignment{
+  font-family: "Lobster", serif;
+  font-size: 80px;
+}
+#myAnswer{
+  font-family: "Lobster", serif;
+  width: 2em;
+  height: 2em;
+  font-size: 5em;
+  text-align: center;
+}
+#goedFout{
+  opacity: 0;
+}
