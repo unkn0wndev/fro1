@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="BMI calculator" content="BMI calculator by Tim van Osch">
+    <meta author="Tim van Osch, MD1A">
+    <meta charset="utf-8">
+
+    <title>BMI calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  </head>
+  <body>
+
+    <header>
+      <h1 class="animated flipInX">BMI calculator</h1>
+    </header>
+
+<div class = bmiform>
+<form id="form">
+  <h3>Vul in:</h3>
+  <input type="radio" name="gender" value="man"> man<br>
+  <input type="radio" name="gender" value="vrouw"> vrouw<br>
+  <input type="radio" name="gender" value="other"> apache attack helicopter
+
+  <h3>Gewicht (in kg):</h3>
+
+  <input type = "text" id="gewicht" value=""><br>
+
+  <h3>Lengte (in cm):</h3>
+
+  <input type="text" id="lengte" value=""><br>
+
+  <input type="button" id="button" value ="Bereken BMI"><br>
+
+  <div id="resultaat"></div>
+
+</form>
+
+</div>
+<h3>door Tim van Osch, MD1A</h3>
+
+<footer class="validatie">
+          <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+            <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Validatie HTML5"></a>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+            <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Validatie CSS"></a>
+        </footer>
+
+
+    <script type="text/javascript" src="ajax.js"></script>
+    <script>
+        let lengte = document.getElementById('lengte');
+        let gewicht = document.getElementById('gewicht');
+        let button = document.getElementById('button');
+        button.addEventListener("click", function(){
+           ajax(gewicht.value, lengte.value);
+         });
+    </script>
+
+  </body>
+</html>
