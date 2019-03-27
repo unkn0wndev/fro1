@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Alles schuift</title>
+  <meta name="author" content="Tim van Osch, MD1A">
+  <meta name="viewport" content="content=device-width, initial-scale=1">
+  <link rel="stylesheet" href="allesschuift.css">
+
+
+
+  <style>
+    #toggleMenu:checked~nav {
+      margin-left: 0em;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+
+    #toggleMenu:checked~main {
+      margin-left: 10em;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+
+    #toggleMenu:checked~main #toggleLabel::before {
+      content: "\2716";
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+
+    nav {
+      position: fixed;
+      margin-left: -10em;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+      z-index: 1;
+    }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+  </style>
+
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="toggleMenu">
+  <nav>
+    <h4>Menu by Tim</h4>
+    <ul>
+      <li>
+        <a href="inhoudschuift.html">ProMod</a>
+      </li>
+      <li>
+        <a href="menuschuift.html">Dodge Charger R/T</a>
+      </li>
+      <li>
+        <a href="allesschuift.html" class="actief">Speedkore Charger</a>
+      <li>
+    </ul>
+  </nav>
+
+  <main>
+    <label for="toggleMenu" id="toggleLabel"></label>
+    <h1>Speedkore Chager</h1>
+    <p><img src="https://images.hgmsites.net/hug/1970-speedkore-dodge-charger-evolution_100676790_h.jpg" alt="Full carbon charger">
+    </p>
+    <p>Speedkore, the Wisconsin company behind the wild carbon-fiber twin-turbo Dodge Demon that blew up the car internet earlier this month, has something else crazy for SEMA this year. It's called the Evolution, and no, it's not much of a 1970
+      Dodge Charger. It just looks like one.
+    </p>
+    <p>Speedkore actually designed a custom chassis for this car consisting of a steel ladder frame and an aluminum floor pan. All the bodywork is made from carbon fiber and billet aluminum, while a roll cage provides extra rigidity and safety. So
+      there's not much 1970 Dodge Charger here at all, though a representative for the company tells us it retains the VIN of a 1970 Charger. So at least it's street legal.
+    </p>
+    <p>The motor is a modern Mopar classic, however—it's the 6.2-liter supercharged V8 from the Dodge Challenger Demon, but modified with a smaller drive pulley for the blower, new fuel injectors, a dry-sump lubrication system and a custom intake and
+      exhaust manifold designed by Speedkore. The company claims 966 horsepower at the rear wheels, all of which is managed by a Tremec T-56 six-speed manual transmission.
+    </p>
+    <p>Speedkore's vice president, Dave Salvaggio, claims the Evolution weighs around 3200 lbs, which should mean this thing is very quick. It has the hardware to deal with that crazy power-to-weight ratio, with Penske coilovers, Brembo brakes with
+      six-piston calipers up front and four-pistons in the rear, and HRE forged wheels wrapped with Michelin Pilot Sport Cup 2 tires. Still, it's easy to imagine this thing being a handful, but Salvaggio says the Evolution is designed to be "docile"
+      in traffic.
+    </p>
+
+
+    <footer class="validatie">
+      <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

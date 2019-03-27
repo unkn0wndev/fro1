@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Menu schuift</title>
+  <meta name="author" content="Tim van Osch, MD1A">
+  <meta name="viewport" content="content=device-width, initial-scale=1">
+  <link rel="stylesheet" href="menuschuift.css">
+
+
+
+  <style>
+    #toggleMenu:checked~nav {
+      margin-left: 0em;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+
+    #toggleMenu:checked~main #toggleLabel::before {
+      content: "\2716";
+      margin-left: 9.7em;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+
+    nav {
+      position: fixed;
+      margin-left: -10em;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+      z-index: 1;
+    }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+  </style>
+
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="toggleMenu">
+  <nav>
+    <h4>Menu by Tim</h4>
+    <ul>
+      <li>
+        <a href="inhoudschuift.html">ProMod</a>
+      </li>
+      <li>
+        <a href="menuschuift.html" class="actief">Dodge Charger R/T</a>
+      </li>
+      <li>
+        <a href="allesschuift.html">Speedkore Charger</a>
+      <li>
+    </ul>
+  </nav>
+
+  <main>
+    <label for="toggleMenu" id="toggleLabel"></label>
+    <h1>Dodge Charger R/T</h1>
+    <p><img src="https://dxsdcl7y7vn9x.cloudfront.net/560901/57CA9CA5-F072-497C-B233-B64EC2F58A95_1.jpg" alt="Dodge Charger R/T">
+    </p>
+    <p>The Dodge Charger is a model of automobile marketed by Dodge. The first Charger was a show car in 1964. There have been several different production Chargers, built on three different platforms and sizes. In the United States, the Charger
+      nameplate has been used on subcompact hatchbacks, full-sized sedans, and personal luxury coupes. The current version is a four-door sedan.
+    </p>
+    <p>The three main iterations of Dodge Chargers were a mid-size (B-body) two-door car (1966–78), a subcompact (L-body) car (1983–87), and the (LX) full-size platform four-door sedans built since 2006.
+
+      The name was also carried by a 1999 concept car that differed substantially from the Charger eventually placed into production for the 2006 model year. A similar name plate, the Ramcharger, was used for the truck-type vehicle.
+
+      The name Charger was also used in Brazil as a performance model based on the Dart (A-Body) (1971–80).
+    </p>
+
+
+    <footer class="validatie">
+      <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

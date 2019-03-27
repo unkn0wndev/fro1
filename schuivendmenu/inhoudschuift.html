@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Inhoud schuift</title>
+  <meta name="author" content="Tim van Osch, MD1A">
+  <meta name="viewport" content="content=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="inhoudschuift.css">
+
+
+
+  <style>
+    #toggleMenu:checked~main {
+      margin-left: 10em;
+    }
+
+    #toggleLabel::before {
+      content: "\2630";
+      cursor: pointer;
+    }
+
+    #toggleMenu:checked~main #toggleLabel::before {
+      content: "\2716";
+    }
+
+    nav {
+      position: fixed;
+    }
+
+    main {
+      position: absolute;
+      margin-left: 0;
+      transition: margin-left .6s cubic-bezier(.17, .67, .83, .86);
+    }
+  </style>
+
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="toggleMenu">
+  <nav>
+    <h4>Menu by Tim</h4>
+    <ul>
+      <li>
+        <a href="inhoudschuift.html" class="actief">ProMod</a>
+      </li>
+      <li>
+        <a href="menuschuift.html">Dodge Charger R/T</a>
+      </li>
+      <li>
+        <a href="allesschuift.html">Speedkore Charger</a>
+      <li>
+    </ul>
+  </nav>
+
+  <main>
+    <label for="toggleMenu" id="toggleLabel"></label>
+    <h1>Pro Mod(ified)</h1>
+    <p><img src="https://i-h1.pinimg.com/474x/79/a0/9c/79a09c7e5aabc7715f039ea5d8f399c4--plymouth-superbird-drag-racing.jpg" alt="ProMod">
+    </p>
+    <p>This division has specific rules about engines, components, bodies, etc. Pro Modifieds can either be raced on 1/4 mile or 1/8 mile tracks. Usually, the NHRA races Pro Mod cars on the 1/4 mile, resulting in high 5 to low 6 second passes, while the PDRA races strictly on 1/8 mile track setups, allowing for high 3 second-to low 4 second passes. Pro Modified has only been around for about 15 years, whereas other classes are much older. Despite Pro Modified cars being slower than the Top Fuel or Funny Car classes, it has become one of the most popular divisions of the sport. The Pro Modified class originated in the UK in 1988,[1] and was followed in the USA by the IHRA a year later.
+    </p>
+    <p>In Europe, Pro Modified moved from the NDRS to become an FIA class in 2006. The Professional Drag Racers Association's top three classes (Pro Extreme, Pro Nitrous, and Extreme 10.5) comprise Pro Modified vehicles; however, many adamant purists say that true drag racing should be 1/4 mile and shun the PDRA despite the free entry to races for fans. Due to the near-limitless engine/drivetrain combinations and incredibly lenient rule system used by most Pro Modified racing organizations (for example, no manufacturers matching engine and body requirement), competing teams in this series of drag racing have virtually every freedom to make their car as fast and competitive as it can possibly be.
+    </p>
+    <p>Pro Mod has a rich history despite only being 20 years old, but the off season between the 2009 and 2010 seasons was the most controversial in years. The IHRA, the first sanctioning body to run the class in the USA, dropped the class in a move to focus more on nitromethane powered vehicles. Picking up where the IHRA left off, the NHRA announced that through a partnership with Get Screened America, Pro Mod would become a full-fledged professional class, running a limited schedule but still competing for national event trophies and a world champion.
+
+    The winningest drivers in US Pro Modified history are Scotty Cannon, Mike Janis and Shannon Jenkins.
+    </p>
+
+    <footer class="validatie">
+      <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+          <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+        </a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
